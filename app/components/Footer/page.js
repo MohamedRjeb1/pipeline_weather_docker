@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="app-footer">
       <div className="footer-container">
-        {/* Section principale */}
+       
         <div className="footer-info">
           <h3>Prévisions Météo</h3>
           <p>
@@ -13,7 +13,7 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Liens rapides */}
+       
         <div className="footer-links">
           <h4>Liens rapides</h4>
           <ul>
@@ -23,7 +23,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Réseaux sociaux */}
+        
         <div className="footer-socials">
           <h4>Suivez-nous</h4>
           <ul>
@@ -34,7 +34,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Copyright */}
+      
       <div className="footer-bottom">
         <p>&copy; {new Date().getFullYear()} Prévisions Météo. Tous droits réservés.</p>
       </div>

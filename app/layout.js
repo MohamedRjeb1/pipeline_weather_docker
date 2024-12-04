@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/Footer/page";
+import Footer from "./components/footer/page";
+
 
 
 export default function Layout({ children }) {

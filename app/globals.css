@@ -1,4 +1,4 @@
-/* Structure globale */
+
 .weather-app {
   font-family: "Arial", sans-serif;
   background: #f5f7fa;
@@ -27,7 +27,7 @@
   gap: 20px;
 }
 
-/* Formulaire */
+
 .weather-form {
   flex: 1 1 300px;
   background: #fff;
@@ -75,7 +75,7 @@
   background-color: #003d80;
 }
 
-/* Détails météo */
+
 .weather-details {
   flex: 1 1 300px;
   background: #fff;
@@ -95,7 +95,7 @@
   font-size: 1.1rem;
 }
 
-/* Carte */
+
 .weather-map {
   flex: 1 1 100%;
   background: #fff;

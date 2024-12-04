@@ -16,10 +16,10 @@ export default function Home() {
   const [error, setError] = useState(null);
 
   const handleFormSubmit = async (e) => {
-    e.preventDefault(); // Empêcher le rechargement de la page
+    e.preventDefault(); 
     try {
-      setError(null); // Réinitialiser les erreurs
-      setWeatherData(null); // Réinitialiser les données météo
+      setError(null); 
+      setWeatherData(null); 
 
       const response = await fetch(`/api/api_weather?city=${city}`);
       if (!response.ok) {
@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <main className="weather-app">
-      {/* En-tête */}
+      
       <header className="app-header">
         <h1>Prévisions Météo</h1>
         <p>
@@ -47,13 +47,13 @@ export default function Home() {
         </p>
       </header>
 
-      {/* Contenu principal */}
+      
       <div className="app-content">
-        {/* Formulaire */}
+        
         <section className="weather-form">
           <h2>Rechercher la météo</h2>
           <form onSubmit={handleFormSubmit}>
-            {/* Pays */}
+            
             <div className="form-group">
               <label htmlFor="country">Pays :</label>
               <select
@@ -69,7 +69,7 @@ export default function Home() {
               </select>
             </div>
 
-            {/* Ville */}
+           
             <div className="form-group">
               <label htmlFor="city">Ville :</label>
               <select
@@ -87,7 +87,7 @@ export default function Home() {
               </select>
             </div>
 
-            {/* Date de début */}
+            
             <div className="form-group">
               <label htmlFor="startDate">Date de début :</label>
               <input
@@ -99,7 +99,7 @@ export default function Home() {
               />
             </div>
 
-            {/* Date de fin */}
+           
             <div className="form-group">
               <label htmlFor="endDate">Date de fin :</label>
               <input
@@ -111,14 +111,14 @@ export default function Home() {
               />
             </div>
 
-            {/* Bouton de soumission */}
+            
             <button type="submit" className="btn-submit">
               Voir la météo
             </button>
           </form>
         </section>
 
-        {/* Données météorologiques */}
+       
         <section className="weather-details">
           <h2>Données Météorologiques</h2>
           {error && <p style={{ color: "red" }}>{error}</p>}
@@ -147,7 +147,7 @@ export default function Home() {
           )}
         </section>
 
-        {/* Carte */}
+       
         <section className="weather-map">
           <h2>Carte</h2>
           {city ? (
